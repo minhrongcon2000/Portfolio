@@ -7,7 +7,8 @@ function MediaTag({ name, url, icon }) {
     return (
         <a className="social-media__item" href={url} target="_blank">
             <button value={name}>
-                <span>{icon}</span> <span>{name}</span>
+                <span className='social-icon'>{icon}</span> 
+                <span className='social-name'>{name}</span>
             </button>
         </a>
     )
@@ -19,9 +20,10 @@ export default function Welcome() {
             <div className="welcome__container">
                 <div className="welcome-text__layout">
                     <div className="welcome-text__container">
-                        <p>Hi, I'm</p>
+                        <p className='preintro'>Hi, I'm</p>
                         <div className="typed-effect__container">
-                            <h1 className="stroke">Vivian Pham</h1>
+                            <h1 className="stroke">Vivian</h1>
+                            <h1 className='stroke'>Pham</h1>
                         </div>
                     </div>
                 </div>
